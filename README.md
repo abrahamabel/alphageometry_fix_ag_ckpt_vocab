@@ -1,11 +1,11 @@
 # Workaround for weights and biases errors 
 ---
 
-## Alphageometry Weights and Vocabulary Setup
+I've Created a hugging face repo with the weights and Voccab for alphageometry , here's the link : https://huggingface.co/abrahamabelboodala/ALPHAGEOMETRY_ag_ckpt_vocab/tree/main/ag_ckpt_vocab
 
-This repository provides an alternative method for setting up alphageometry, particularly useful for users encountering errors with the `bash download.sh` script from Google Drive.
+#  Install from hugging face repo
 
-### Common Error
+## Common Error
 
 When running the `download.sh` script, you may encounter the following error:
 
@@ -18,13 +18,14 @@ Failed to retrieve folder contents:
 file/folder name cannot be extracted from: ag_ckpt_vocab – Google Drive
 ```
 
-### Resolution Steps
+## Resolution Steps
 
 1. **Create a Folder:**
    - At the root of your alphageometry folder, create a new folder named `ag_ckpt_vocab`.
      Example: `alphageometry/ag_ckpt_vocab`
 
 2. **Download Required Files:**
+   - from this link https://huggingface.co/abrahamabelboodala/ALPHAGEOMETRY_ag_ckpt_vocab/tree/main/ag_ckpt_vocab
    - Download and place the following three files inside your `ag_ckpt_vocab` folder:
      1. `geometry.757.vocab`
      2. `geometry.757.model`
@@ -38,7 +39,7 @@ file/folder name cannot be extracted from: ag_ckpt_vocab – Google Drive
      export DATA=ag_ckpt_vocab
      ```
 
-#### Alternative to Step 3
+### Alternative to Step 3
 
 Alternatively, you can automate the environment variable setup:
 
